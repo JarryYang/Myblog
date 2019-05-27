@@ -1,0 +1,13 @@
+com.qq.connect
+com.qq.connect.api
+com.qq.connect.api.qzone
+com.qq.connect.api.tenpay
+com.qq.connect.api.weibo
+com.qq.connect.javabeans
+com.qq.connect.javabeans.qzone
+com.qq.connect.javabeans.tenpay
+com.qq.connect.javabeans.weibo
+com.qq.connect.oauth
+com.qq.connect.utils
+com.qq.connect.utils.http
+com.qq.connect.utils.json

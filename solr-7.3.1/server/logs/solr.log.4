@@ -1,0 +1,142 @@
+2019-05-27 07:33:49.922 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-05-27 07:33:50.730 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr? version 7.3.1
+2019-05-27 07:33:50.731 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-05-27 07:33:50.731 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: H:\teachmyblog\dreamland\solr-7.3.1
+2019-05-27 07:33:50.749 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-05-27T07:33:50.733Z
+2019-05-27 07:33:50.751 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2019-05-27 07:33:50.780 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: H:\teachmyblog\dreamland\solr-7.3.1\server\solr
+2019-05-27 07:33:50.787 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from H:\teachmyblog\dreamland\solr-7.3.1\server\solr\solr.xml
+2019-05-27 07:33:51.822 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath H:\teachmyblog\dreamland\solr-7.3.1\server\solr
+2019-05-27 07:33:51.823 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mycore]
+2019-05-27 07:33:51.829 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-05-27 07:33:51.908 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.c.SolrResourceLoader [mycore] Added 57 libs to classloader, from paths: [/H:/teachmyblog/dreamland/solr-7.3.1/contrib/clustering/lib, /H:/teachmyblog/dreamland/solr-7.3.1/contrib/extraction/lib, /H:/teachmyblog/dreamland/solr-7.3.1/contrib/langid/lib, /H:/teachmyblog/dreamland/solr-7.3.1/contrib/velocity/lib, /H:/teachmyblog/dreamland/solr-7.3.1/dist]
+2019-05-27 07:33:52.205 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.3.1
+2019-05-27 07:33:52.499 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.s.IndexSchema [mycore] Schema name=default-config
+2019-05-27 07:33:53.058 INFO  (main) [   ] o.e.j.s.Server Started @4716ms
+2019-05-27 07:33:53.183 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-05-27 07:33:53.236 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.c.CoreContainer Creating SolrCore 'mycore' using configuration from instancedir H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore, trusted=true
+2019-05-27 07:33:53.277 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2019-05-27 07:33:53.283 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.c.SolrCore [[mycore] ] Opening new SolrCore at [H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore], dataDir=[H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore\data\]
+2019-05-27 07:33:53.333 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-05-27 07:33:53.784 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-05-27 07:33:53.784 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-05-27 07:33:53.813 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2019-05-27 07:33:53.813 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-05-27 07:33:53.959 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.s.SolrIndexSearcher Opening [Searcher@1849c74f[mycore] main]
+2019-05-27 07:33:53.972 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore\conf
+2019-05-27 07:33:53.998 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-05-27 07:33:54.004 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-05-27 07:33:54.019 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-05-27 07:33:54.123 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1849c74f[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.3.1):C1)))}
+2019-05-27 07:33:54.123 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-05-27 07:33:54.123 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-05-27 07:33:54.135 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.SolrCore [mycore] Registered new searcher Searcher@1849c74f[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.3.1):C1)))}
+2019-05-27 07:33:57.753 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=68
+2019-05-27 07:34:02.349 INFO  (qtp191382150-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942442158} status=0 QTime=2
+2019-05-27 07:34:02.373 INFO  (qtp191382150-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1558942442158} status=0 QTime=14
+2019-05-27 07:34:02.466 INFO  (qtp191382150-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942442158} status=0 QTime=112
+2019-05-27 07:34:02.488 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942442158} status=0 QTime=0
+2019-05-27 07:34:02.489 INFO  (qtp191382150-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1558942442158} status=0 QTime=1
+2019-05-27 07:34:02.621 INFO  (qtp191382150-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942442158} status=0 QTime=127
+2019-05-27 07:34:12.400 INFO  (qtp191382150-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942442158} status=0 QTime=0
+2019-05-27 07:34:12.411 INFO  (qtp191382150-36) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1558942442158&ts=1558942442158} status=503 QTime=4
+2019-05-27 07:34:12.415 INFO  (qtp191382150-22) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/replication params={wt=json&command=details&_=1558942452376} status=0 QTime=13
+2019-05-27 07:34:12.417 INFO  (qtp191382150-18) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1558942452376} status=0 QTime=14
+2019-05-27 07:34:12.625 INFO  (qtp191382150-14) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/system params={wt=json&_=1558942452376} status=0 QTime=222
+2019-05-27 07:34:12.625 INFO  (qtp191382150-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942442158} status=0 QTime=225
+2019-05-27 07:34:14.564 INFO  (qtp191382150-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942442158} status=0 QTime=0
+2019-05-27 07:34:14.590 INFO  (qtp191382150-18) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1558942452376} status=0 QTime=26
+2019-05-27 07:34:14.673 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942442158} status=0 QTime=87
+2019-05-27 07:35:18.827 INFO  (qtp191382150-16) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1558942442294}{delete=[33 (-1634669710607908864)]} 0 174
+2019-05-27 07:35:19.826 INFO  (commitScheduler-11-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2019-05-27 07:35:19.920 INFO  (commitScheduler-11-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:35:33.823 INFO  (commitScheduler-10-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-05-27 07:35:33.825 INFO  (commitScheduler-10-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-05-27 07:35:33.828 INFO  (commitScheduler-10-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:35:44.916 INFO  (qtp191382150-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942442158} status=0 QTime=0
+2019-05-27 07:35:44.994 INFO  (qtp191382150-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942442158} status=0 QTime=75
+2019-05-27 07:35:46.466 INFO  (qtp191382150-20) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/select params={q=*:*&_=1558942544843} hits=1 status=0 QTime=43
+2019-05-27 07:36:21.052 INFO  (qtp191382150-17) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[34 (1634669775835627520)]} 0 45
+2019-05-27 07:36:21.080 INFO  (qtp191382150-36) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1634669775898542080,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-05-27 07:36:21.080 INFO  (qtp191382150-36) [   x:mycore] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2be7820c commitCommandVersion:1634669775898542080
+2019-05-27 07:36:21.269 INFO  (qtp191382150-36) [   x:mycore] o.a.s.s.SolrIndexSearcher Opening [Searcher@1f6b39b3[mycore] main]
+2019-05-27 07:36:21.271 INFO  (qtp191382150-36) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:36:21.271 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1f6b39b3[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1)))}
+2019-05-27 07:36:21.271 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-05-27 07:36:21.271 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.SolrCore [mycore] Registered new searcher Searcher@1f6b39b3[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1)))}
+2019-05-27 07:36:21.282 INFO  (qtp191382150-36) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 202
+2019-05-27 07:36:37.321 INFO  (qtp191382150-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942597113} status=0 QTime=0
+2019-05-27 07:36:37.428 INFO  (qtp191382150-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942597114} status=0 QTime=106
+2019-05-27 07:36:39.504 INFO  (qtp191382150-39) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/select params={q=*:*&_=1558942597255} hits=1 status=0 QTime=0
+2019-05-27 07:40:15.875 INFO  (qtp191382150-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942597113} status=0 QTime=0
+2019-05-27 07:40:15.888 INFO  (qtp191382150-17) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1558942815856} status=0 QTime=4
+2019-05-27 07:40:15.970 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942597114} status=0 QTime=90
+2019-05-27 07:41:25.220 INFO  (qtp191382150-16) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[33 (1634670094809300992)]} 0 4
+2019-05-27 07:41:25.256 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1634670094850195456,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-05-27 07:41:25.256 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2be7820c commitCommandVersion:1634670094850195456
+2019-05-27 07:41:25.443 INFO  (qtp191382150-39) [   x:mycore] o.a.s.s.SolrIndexSearcher Opening [Searcher@31b7f556[mycore] main]
+2019-05-27 07:41:25.444 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@31b7f556[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1) Uninverting(_2(7.3.1):C1)))}
+2019-05-27 07:41:25.444 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-05-27 07:41:25.445 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:41:25.445 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.SolrCore [mycore] Registered new searcher Searcher@31b7f556[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1) Uninverting(_2(7.3.1):C1)))}
+2019-05-27 07:41:25.445 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 189
+2019-05-27 07:41:40.901 INFO  (qtp191382150-39) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1558942900848} status=0 QTime=6
+2019-05-27 07:41:40.904 INFO  (qtp191382150-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942900747} status=0 QTime=0
+2019-05-27 07:41:41.035 INFO  (qtp191382150-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942900747} status=0 QTime=98
+2019-05-27 07:41:43.180 INFO  (qtp191382150-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942900747} status=0 QTime=0
+2019-05-27 07:41:43.235 INFO  (qtp191382150-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942900747} status=0 QTime=66
+2019-05-27 07:41:45.048 INFO  (qtp191382150-34) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/select params={q=*:*&_=1558942903108} hits=2 status=0 QTime=0
+2019-05-27 07:43:44.185 INFO  (qtp191382150-21) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[33 (1634670240524664832)]} 0 2
+2019-05-27 07:43:44.211 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1634670240555073536,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-05-27 07:43:44.211 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2be7820c commitCommandVersion:1634670240555073536
+2019-05-27 07:43:44.407 INFO  (qtp191382150-39) [   x:mycore] o.a.s.s.SolrIndexSearcher Opening [Searcher@1d354090[mycore] main]
+2019-05-27 07:43:44.409 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1d354090[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1) Uninverting(_3(7.3.1):C1)))}
+2019-05-27 07:43:44.410 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:43:44.410 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-05-27 07:43:44.410 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.SolrCore [mycore] Registered new searcher Searcher@1d354090[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1) Uninverting(_3(7.3.1):C1)))}
+2019-05-27 07:43:44.427 INFO  (qtp191382150-39) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 216
+2019-05-27 07:44:09.867 INFO  (qtp191382150-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558943049646} status=0 QTime=0
+2019-05-27 07:44:09.950 INFO  (qtp191382150-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558943049646} status=0 QTime=86
+2019-05-27 07:44:11.158 INFO  (qtp191382150-18) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/select params={q=*:*&_=1558943049796} hits=2 status=0 QTime=0
+2019-05-27 07:44:18.118 INFO  (qtp191382150-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558943049646} status=0 QTime=0
+2019-05-27 07:44:18.120 INFO  (qtp191382150-20) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1558943058090} status=0 QTime=1
+2019-05-27 07:44:18.189 INFO  (qtp191382150-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558943049646} status=0 QTime=0
+2019-05-27 07:44:18.193 INFO  (qtp191382150-20) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1558943058090} status=0 QTime=0
+2019-05-27 07:44:18.257 INFO  (qtp191382150-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558943049646} status=0 QTime=136
+2019-05-27 07:44:18.279 INFO  (qtp191382150-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558943049646} status=0 QTime=82
+2019-05-27 07:44:19.852 INFO  (qtp191382150-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558943049646} status=0 QTime=0
+2019-05-27 07:44:19.855 INFO  (qtp191382150-18) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1558943059837} status=0 QTime=2
+2019-05-27 07:44:19.924 INFO  (qtp191382150-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558943049646} status=0 QTime=55
+2019-05-27 07:44:54.657 INFO  (qtp191382150-18) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1558943059837}{delete=[33 (-1634670314422009856)]} 0 2
+2019-05-27 07:44:55.658 INFO  (commitScheduler-11-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2019-05-27 07:44:55.663 INFO  (commitScheduler-11-thread-1) [   x:mycore] o.a.s.s.SolrIndexSearcher Opening [Searcher@528ea44[mycore] main]
+2019-05-27 07:44:55.665 INFO  (commitScheduler-11-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:44:55.666 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@528ea44[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1)))}
+2019-05-27 07:44:55.667 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-05-27 07:44:55.668 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.SolrCore [mycore] Registered new searcher Searcher@528ea44[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1)))}
+2019-05-27 07:45:03.680 INFO  (qtp191382150-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558943103492} status=0 QTime=0
+2019-05-27 07:45:03.685 INFO  (qtp191382150-41) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1558943103586} status=0 QTime=2
+2019-05-27 07:45:03.759 INFO  (qtp191382150-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558943103492} status=0 QTime=78
+2019-05-27 07:45:09.659 INFO  (commitScheduler-10-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-05-27 07:45:09.659 INFO  (commitScheduler-10-thread-1) [   x:mycore] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2be7820c commitCommandVersion:0
+2019-05-27 07:45:09.797 INFO  (qtp191382150-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558943103492} status=0 QTime=0
+2019-05-27 07:45:09.865 INFO  (qtp191382150-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558943103492} status=0 QTime=69
+2019-05-27 07:45:09.897 INFO  (commitScheduler-10-thread-1) [   x:mycore] o.a.s.s.SolrIndexSearcher Opening [Searcher@6cdac6de[mycore] realtime]
+2019-05-27 07:45:09.897 INFO  (commitScheduler-10-thread-1) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:45:10.862 INFO  (qtp191382150-21) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/select params={q=*:*&_=1558943109734} hits=1 status=0 QTime=0
+2019-05-27 07:45:29.897 INFO  (qtp191382150-21) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[33 (1634670351371730944)]} 0 3
+2019-05-27 07:45:29.925 INFO  (qtp191382150-16) [   x:mycore] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1634670351404236800,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-05-27 07:45:29.925 INFO  (qtp191382150-16) [   x:mycore] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2be7820c commitCommandVersion:1634670351404236800
+2019-05-27 07:45:30.118 INFO  (qtp191382150-16) [   x:mycore] o.a.s.s.SolrIndexSearcher Opening [Searcher@653fbaba[mycore] main]
+2019-05-27 07:45:30.120 INFO  (qtp191382150-16) [   x:mycore] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-05-27 07:45:30.120 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@653fbaba[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1) Uninverting(_4(7.3.1):C1)))}
+2019-05-27 07:45:30.120 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-05-27 07:45:30.120 INFO  (searcherExecutor-7-thread-1-processing-x:mycore) [   x:mycore] o.a.s.c.SolrCore [mycore] Registered new searcher Searcher@653fbaba[mycore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.3.1):C1) Uninverting(_4(7.3.1):C1)))}
+2019-05-27 07:45:30.121 INFO  (qtp191382150-16) [   x:mycore] o.a.s.u.p.LogUpdateProcessorFactory [mycore]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 196
+2019-05-27 07:45:36.553 INFO  (qtp191382150-21) [   x:mycore] o.a.s.c.S.Request [mycore]  webapp=/solr path=/select params={q=*:*&_=1558943109734} hits=2 status=0 QTime=0
+2019-05-27 07:51:47.309 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1525919705
+2019-05-27 07:51:47.309 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-05-27 07:51:47.309 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-05-27 07:51:47.309 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-05-27 07:51:47.311 INFO  (coreCloseExecutor-12-thread-1) [   x:mycore] o.a.s.c.SolrCore [mycore]  CLOSING SolrCore org.apache.solr.core.SolrCore@52a303fb
+2019-05-27 07:51:47.312 INFO  (coreCloseExecutor-12-thread-1) [   x:mycore] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mycore, tag=1386415099

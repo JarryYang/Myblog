@@ -1,0 +1,137 @@
+2019-05-27 07:28:12.764 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-05-27 07:28:13.590 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr? version 7.3.1
+2019-05-27 07:28:13.591 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-05-27 07:28:13.591 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: H:\teachmyblog\dreamland\solr-7.3.1
+2019-05-27 07:28:13.607 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-05-27T07:28:13.593Z
+2019-05-27 07:28:13.608 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2019-05-27 07:28:13.639 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: H:\teachmyblog\dreamland\solr-7.3.1\server\solr
+2019-05-27 07:28:13.648 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from H:\teachmyblog\dreamland\solr-7.3.1\server\solr\solr.xml
+2019-05-27 07:28:14.699 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath H:\teachmyblog\dreamland\solr-7.3.1\server\solr
+2019-05-27 07:28:14.700 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mycore]
+2019-05-27 07:28:14.707 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-05-27 07:28:14.798 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.c.SolrResourceLoader [mycore] Added 57 libs to classloader, from paths: [/H:/teachmyblog/dreamland/solr-7.3.1/contrib/clustering/lib, /H:/teachmyblog/dreamland/solr-7.3.1/contrib/extraction/lib, /H:/teachmyblog/dreamland/solr-7.3.1/contrib/langid/lib, /H:/teachmyblog/dreamland/solr-7.3.1/contrib/velocity/lib, /H:/teachmyblog/dreamland/solr-7.3.1/dist]
+2019-05-27 07:28:15.137 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.3.1
+2019-05-27 07:28:15.384 INFO  (coreLoadExecutor-6-thread-1) [   x:mycore] o.a.s.s.IndexSchema [mycore] Schema name=default-config
+2019-05-27 07:28:15.915 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup
+org.apache.solr.common.SolrException: Unable to create core [mycore]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1061)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:640)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core mycore: Can't load schema H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore\conf\managed-schema: Unknown fieldType 'String' specified on field author
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1089)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1036)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore\conf\managed-schema: Unknown fieldType 'String' specified on field author
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:582)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:179)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'String' specified on field author
+	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:640)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:476)
+	... 16 more
+2019-05-27 07:28:15.955 INFO  (main) [   ] o.e.j.s.Server Started @4766ms
+2019-05-27 07:28:20.597 INFO  (qtp191382150-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=74
+2019-05-27 07:28:31.077 INFO  (qtp191382150-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942110770} status=0 QTime=1
+2019-05-27 07:28:31.199 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942110771} status=0 QTime=116
+2019-05-27 07:28:44.198 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942110770} status=0 QTime=0
+2019-05-27 07:28:44.204 INFO  (qtp191382150-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1558942110770} status=0 QTime=0
+2019-05-27 07:28:44.277 INFO  (qtp191382150-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942110771} status=0 QTime=78
+2019-05-27 07:29:17.253 ERROR (qtp191382150-33) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'mycore' is not available due to init failure: Could not load conf for core mycore: Can't load schema H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore\conf\managed-schema: Unknown fieldType 'String' specified on field author
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1495)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:471)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core mycore: Can't load schema H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore\conf\managed-schema: Unknown fieldType 'String' specified on field author
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1089)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1036)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:640)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:188)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema H:\teachmyblog\dreamland\solr-7.3.1\server\solr\mycore\conf\managed-schema: Unknown fieldType 'String' specified on field author
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:582)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:179)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'String' specified on field author
+	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:640)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:476)
+	... 16 more
+
+2019-05-27 07:30:25.920 INFO  (qtp191382150-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942110770} status=0 QTime=0
+2019-05-27 07:30:26.066 INFO  (qtp191382150-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942110771} status=0 QTime=146
+2019-05-27 07:30:26.066 INFO  (qtp191382150-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942110771} status=0 QTime=134
+2019-05-27 07:30:32.193 INFO  (qtp191382150-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1558942232174&since=0} status=0 QTime=8
+2019-05-27 07:30:32.203 INFO  (qtp191382150-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942110770} status=0 QTime=0
+2019-05-27 07:30:32.245 INFO  (qtp191382150-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942110771} status=0 QTime=61
+2019-05-27 07:30:33.822 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942110770} status=0 QTime=0
+2019-05-27 07:30:33.931 INFO  (qtp191382150-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942110771} status=0 QTime=110
+2019-05-27 07:30:33.936 INFO  (qtp191382150-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942110771} status=0 QTime=111
+2019-05-27 07:30:54.122 INFO  (qtp191382150-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=44
+2019-05-27 07:30:54.193 INFO  (qtp191382150-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=43
+2019-05-27 07:30:54.205 INFO  (qtp191382150-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=mycore&action=STATUS&wt=json} status=0 QTime=0
+2019-05-27 07:31:04.168 INFO  (qtp191382150-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942264009} status=0 QTime=2
+2019-05-27 07:31:04.327 INFO  (qtp191382150-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942264009} status=0 QTime=170
+2019-05-27 07:31:04.327 INFO  (qtp191382150-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942264009} status=0 QTime=168
+2019-05-27 07:31:06.990 INFO  (qtp191382150-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1558942264009} status=0 QTime=0
+2019-05-27 07:31:06.994 INFO  (qtp191382150-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1558942264009} status=0 QTime=0
+2019-05-27 07:31:07.070 INFO  (qtp191382150-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1558942264009} status=0 QTime=80
+2019-05-27 07:33:44.246 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1525919705
+2019-05-27 07:33:44.246 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-05-27 07:33:44.246 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-05-27 07:33:44.246 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
