@@ -16,7 +16,7 @@ public interface SolrService {
      * @param pageSize
      * @return
      */
-    Page<UserContent> findByKeyWords(String keyword, Integer pageNum, Integer pageSize);
+   Page<UserContent> findByKeyWords(String keyword, Integer pageNum, Integer pageSize);
 
     /**
      * 添加文章到solr索引库中
