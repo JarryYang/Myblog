@@ -1,7 +1,6 @@
 # Myblog
 beginnin with ssm study
 框架：ssm
-安全：spring security
 数据库：mysql
 中间件：active mq
 缓存：redis
